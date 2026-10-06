@@ -28,7 +28,7 @@ def get_response(message):
     else:
         return "Sorry, I don't have information about that yet."
 
-@app.route("/")
+@app.routea("/")
 def home():
     return render_template("index.html")
 
