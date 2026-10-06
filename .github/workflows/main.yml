@@ -1,7 +1,7 @@
 name: python check
 on:
 push:
-branches:[mani]
+branches:[main]
 pull_request:
 branches:[main]
 jobs:
