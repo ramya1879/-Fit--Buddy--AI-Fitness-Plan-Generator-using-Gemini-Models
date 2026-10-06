@@ -1,0 +1,2 @@
+# -Fit--Buddy--AI-Fitness-Plan-Generator-using-Gemini-Models
+fitbuddy ai is a personal fitness and nutrition companion powered by google gemini models that creates custom workout routrition plans throughSmart meal &amp;food logging:analyzes your meals via photo or natural text descriptions (understands 10,000+global and regional foods).   Workout Builder:Creates personalized using an integrated exercise library 
