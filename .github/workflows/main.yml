@@ -1,0 +1,25 @@
+name: python check
+on:
+push:
+branches:[mani]
+pull_request:
+branches:[main]
+jobs:
+check:
+runs-on:ubuntu-latest
+step:
+- name:checkout code 
+uses:
+actions/checkout@v4
+-name:set up python
+uses:
+actions/setup-python@v5
+with:
+python-version:
+"3.11"
+-name:check python
+files
+run:python:-m
+py_compile app.py chatbot.py 
+run:python-m
+py_
