@@ -2,10 +2,10 @@ name: Python Check
 on: 
  push:
    branches: 
-     -main
+     - main
  pull_request:
      branches:
-     -main
+     - main
  jobs:
    check:
       runs-on: ubuntu-latest
