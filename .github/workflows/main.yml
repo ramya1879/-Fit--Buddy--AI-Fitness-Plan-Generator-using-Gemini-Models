@@ -1,19 +1,19 @@
 name:python check
 on;
 push:
-pranches:[main]
+branches:[main]
 pull_request:
 branches:[main]
 jobs:
 check:
 runs-on:ubuntu-latest
 steps:
-- name:Checkout code
-uses:actions/checkout@v4
+- name: Checkout code
+uses: actions/checkout@v4
 - name:set up python
 uses:
 actions/setup-python@v5
 with:
 python-version:"3.11"
-- name:Run python check
-run:python- -version
+- name: Run python check
+run:python --version
