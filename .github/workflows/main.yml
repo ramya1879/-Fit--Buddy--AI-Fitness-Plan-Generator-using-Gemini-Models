@@ -4,18 +4,18 @@ on:
   branches:
     - main
 pull_request:
-branches:
-- mani
+  branches:
+    - mani
 jobs:
-check:
-runs-on:ubuntu-latest
+  check:
+    runs-on:ubuntu-latest
 steps:
 - name: Checkout code
-uses: actions/checkout@v4
-- name:set up python
-uses:
+  uses: actions/checkout@v4
+- name: set up python
+  uses:
 actions/setup-python@v5
 with:
-python-version:"3.11"
+  python-version:"3.11"
 - name: Run python check
-run:python --version
+  run: python --version
