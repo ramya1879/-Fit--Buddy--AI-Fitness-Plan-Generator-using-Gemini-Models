@@ -1,4 +1,4 @@
-name: python check
+name: Python Check
 on:
  push:
   branches:
@@ -16,6 +16,6 @@ steps:
   uses:
 actions/setup-python@v5
 with:
-  python-version:"3.11"
-- name: Run python check
+  python-version: "3.11"
+- name: Run Python Check
   run: python --version
