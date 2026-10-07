@@ -1,28 +1,29 @@
 name: Python Check
 on:
- push:
-  branches:
-    - main
-pull_request:
-  branches:
-    - mani
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-     - name: Checkout code
-       uses:
-actions/checkout@v4
-      - name: Set up Python
-        uses:
-actions/setup-python@v5
-        with:
-        python-version: 
-"3.12"
-       - name: Run Python
- Check  
-          run: pyton
+  push:
+    branches: 
+     -main
+   pull_request:
+     branches:
+     -main
+ jobs:
+   check:
+      runs-on: ubuntu-latest
+      steps:
+       - name: Checkout code
+         uses:
+ actions/checkout@v4
+       - name: Set up Python
+         uses:
+ actions/setup-python@v5
+         with:
+            python-version: "3.12"
+         - name: Run Python
+ Check
+         run: python
  --version
-  "3.12"
-- name: Run Python Check
-  run: python --version
+         
+
+
+
+         
