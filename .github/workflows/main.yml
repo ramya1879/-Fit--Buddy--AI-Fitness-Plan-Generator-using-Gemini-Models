@@ -1,5 +1,5 @@
 name: Python Check
-on:
+"on":
   push:
     branches: 
      -main
@@ -30,7 +30,7 @@ on:
   if
             - name: Check Python
 file
-              run:|
+              run: |
               python -m
 py_compile app.py
               python -m
