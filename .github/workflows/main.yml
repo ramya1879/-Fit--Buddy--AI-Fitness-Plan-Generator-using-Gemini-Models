@@ -2,7 +2,7 @@ name:  Python Check
 "on":
    push:
    branches:
-   - image_version: branch_protection_rule: 
+   - mani
    jobs:
    check:
      runs-on: ubuntu-latest
