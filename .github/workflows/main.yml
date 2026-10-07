@@ -1,25 +1,19 @@
-name: python check
-on:
+name:python check
+on;
 push:
-branches: [main]
+pranches:[main]
 pull_request:
-branches: [mani]
+branches:[main]
 jobs:
 check:
 runs-on:ubuntu-latest
-step:
-- name:checkout code 
-uses:
-actions/checkout@v4
--name:set up python
+steps:
+- name:Checkout code
+uses:actions/checkout@v4
+- name:set up python
 uses:
 actions/setup-python@v5
 with:
-python-version:
-"3.11"
--name:check python
-files
-run:python:-m
-py_compile app.py chatbot.py 
-run:python-m
-py_
+python-version:"3.11"
+- name:Run python check
+run:python- -version
