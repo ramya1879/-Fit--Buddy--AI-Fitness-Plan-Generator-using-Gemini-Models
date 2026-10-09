@@ -1,12 +1,13 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask,
+render_template, request,
+jsonify
 
-app = Flask(
-    __name__,
-    template_folder="../frontend",
-    static_folder="../frontend",
-    static_url_path="/static"
-)
-
+app = Flask(  __name__,
+template_folder="../
+frontend",
+static_folder="../frontend/
+    static_url_path="/
+    static")
 def get_response(message):
     message = message.lower()
 
@@ -40,7 +41,6 @@ def chat():
     response = get_response(message)
 
     return jsonify({"response": response})
-
 if __name__ == "__main__":
     app.run(debug=True)
 
