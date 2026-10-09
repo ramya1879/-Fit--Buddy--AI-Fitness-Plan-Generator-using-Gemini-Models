@@ -11,7 +11,7 @@ def get_response(message):
     message = message.lower()
 
     if "exam" in message:
-        return "Exam details will be updated soon."s
+        return "Exam details will be updated soon."
 
     elif "fee" in message:
         return "Please contact the college office for fee details."
